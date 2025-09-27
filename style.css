@@ -1,0 +1,32 @@
+ .container {
+            display: flex;
+            gap: 16px;
+            padding: 16px;
+            flex-wrap: wrap;
+            background: #f5f5f5;
+        }
+        .child {
+            flex: 1 1 200px;
+            min-width: 200px;
+            background: #525550;
+            color: #fff;
+            padding: 24px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(235, 230, 230, 0.08);
+        }
+        @media (max-width: 700px) {
+            .container {
+                flex-direction:column ;
+            }
+            .child {
+                margin-bottom: 16px;
+            }
+            .child:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        #show{
+            cursor:pointer;
+        }
