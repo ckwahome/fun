@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Divs</title>
+    <title>weather app</title>
    <link rel="stylesheet" href="style.css">
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <div class="grid place-content-center">
+   <!--<div class="grid place-content-center">
     
      <fieldset>
         <legend>password viewer</legend>
         <input type="text" placeholder="username" id="usernameInput"> <br>
-        <input type="password" placeholder="Enter your password" id="passwordInput"><!--true -->
+        <input type="password" placeholder="Enter your password" id="passwordInput">
         <span id="show">show</span>
      </fieldset>
      <p id="greet" class="mt-2"></p>
     <button>get greet</button>
+</div>--> 
+<div class="bg-orange-800  w-full h-screen grid  place-items-center">
+    <h1 class="text-white text-5xl capitalize mb-8">weather app</h1>
+    <!--input city name-->
+    <div class="w-md bg-orange-400 rounded-md flex ">
+        <input type="text" class="flex-1" placeholder="Si uandike jina bro" id="cityInput">
+        <button id="Btn" class="bg-green-800 rounded-md">Get weather</button>
+    </div>
+    <!--output-->
+    <div id="results" >
+    <p class=" text-xl text-yellow-200 capitalize">hello</p>
+    </div>
 </div>
 <script src="index.js"></script>
 </body>
